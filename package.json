@@ -1,0 +1,14 @@
+{
+  "name": "workspace",
+  "version": "1.0.0",
+  "description": "this is a website maybe",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "author": "empyrean aracadian veer cantacuzino",
+  "license": "MIT",
+  "dependencies": {
+    "express-fileupload": "^1.2.1"
+  }
+}

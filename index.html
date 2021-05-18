@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetic?</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- scripts in play -->
+    <script type="text/javascript" src="js/startup.core.js"></script>
+    <script type="text/javascript" src="js/main.core.js"></script>
+
+    <!-- google fonts import -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+
+</head>
+<body>
+
+<form method="POST" action="" enctype="multipart/form-data" id="the-form">
+<div class="wrapper">    
+    <h1 id="main-heading">DIABETIC RETINOPATHY DETEXTION</h1>
+    <h2 id="sh">just upload your eye image and get prediction about diabetic retinopathy.</h2>
+    
+    <div class="inner-wrapper">
+        <h2>choose an image file to upload: </h2>
+        <input type="file" name="file" required id="file-browser">
+    </div>
+
+    <div id="image"></div>
+    
+    <div class="inner-wrapper-2">
+        <button id="upload-file">upload file</button>
+    </div>
+    
+</div>
+
+<div class="wrapper-2">
+    <h3 id="process-tag">processing: </h3>
+    <div id="process-bar"></div>
+
+    <div class="inner-wrapper-3">
+        <h1>Status : </h1>
+        <h1 id="result-final"></h1>
+    </div>
+</div>
+</form>
+</body>
+</html>
