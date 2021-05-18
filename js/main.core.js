@@ -100,11 +100,11 @@ function processUploadClick(e){
         let variable = Math.random();
         if(variable <= 0.5)
         {
-            finalResultString = "Retinopathy Diabetes Cannot Be Detected.";
+            finalResultString = "Diabetic Retinopathy Cannot Be Detected.";
             resultFinal.style.color = "green";
         }
         else{
-            finalResultString = "Retinopathy Diabetes Confirmed";
+            finalResultString = "Diabetes Retinopathy Is Present";
             resultFinal.style.color = "red";
         }
     }
