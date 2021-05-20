@@ -26,9 +26,22 @@ function processBrowse(){
 
 }
 
+	function getExtension(filename) {
+	var parts = filename.split('.');
+	return parts[parts.length - 1];
+}
 
 function processUploadClick(e){
     e.preventDefault();
+	
+	let extension = getExtension(fileBrowser.files[0].name);
+	
+	if(!(extension == 'jpg' || extension == 'png' || extension == 'bmp' || extension == 'jpeg'))
+	{
+		processTag.innerHTML = "The Uploaded File Type Is Not Supported As Of Now.";
+		return;
+	}
+
     processBar.classList.add("fill-up");
 
     console.log(fileBrowser.files[0].name);
